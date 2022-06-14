@@ -63,13 +63,13 @@ img {
 header {
   padding: 3.333rem 0 5.556rem 0;
   background: rgba(158, 140, 108, 0.1);
-  clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 1.944rem), 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 9%), 0% 100%);
 }
 
 footer {
   padding: 4.444rem 0 5rem 0;
   background: rgba(158, 140, 108, 0.1);
-  clip-path: polygon(0% calc(0% + 1.944rem), 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0% calc(0% + 9%), 100% 0%, 100% 100%, 0% 100%);
 }
 
 section {
@@ -118,6 +118,14 @@ h5 {
   color: #8F8F8F;
 }
 
+svg {
+  fill: #0699A6;
+}
+
+svg:hover {
+  fill: #035F67;
+}
+
 .container {
   margin: 0 auto;
   max-width: 100%;
@@ -141,6 +149,11 @@ h5 {
   margin: 2.22rem auto 0 auto;
   width: 12.5rem;
   background: #0699A6;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contact-me-btn:hover, .contact-me-btn:active {
+  background: #035F67;
 }
 
 .contact-me-btn a {
@@ -170,6 +183,10 @@ h5 {
   margin-bottom: 2.5rem;
 }
 
+.email:hover, .email:active {
+  color: #035F67;
+}
+
 .social-media-list{
   display: flex;
   justify-content: space-around;
@@ -185,13 +202,20 @@ h5 {
   margin-bottom: 2.22rem;
 }
 
-@media (min-width: 481px) {
+@media (min-width: 479px) {
   html {
     font-size: 20px;
   }
   .photo {
     max-width: 11.111rem;
     max-height: 11.111rem;
+  }
+  header {
+    clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 11.5%), 0% 100%);
+  }
+  
+  footer {
+    clip-path: polygon(0% calc(0% + 11.5%), 100% 0%, 100% 100%, 0% 100%);
   }
 }
 
@@ -242,6 +266,14 @@ h5 {
 
   section {
     margin: 2.222rem 0;
+  }
+
+  header {
+    clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 18%), 0% 100%);
+  }
+  
+  footer {
+    clip-path: polygon(0% calc(0% + 18%), 100% 0%, 100% 100%, 0% 100%);
   }
 
   h2 {
