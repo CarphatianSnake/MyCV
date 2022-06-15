@@ -209,6 +209,17 @@ svg {
   color: #035F67;
 }
 
+.responsibilities-list li {
+  list-style: square;
+  list-style-position: inside;
+}
+
+.responsibilities-list li::marker {
+  font-size: 0.75rem;
+  color: #9E8C6C;
+}
+
+
 @media (min-width: 479px) {
   html {
     font-size: 20px;
