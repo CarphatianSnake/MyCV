@@ -129,6 +129,10 @@ svg {
   -webkit-filter: drop-shadow(0px 2px 1.5px rgba(0, 0, 0, 0.25));
 }
 
+p {
+  margin-top: 1rem;
+}
+
 .social-media-list li svg:hover {
   fill: #1f3d67;
   -webkit-fill: #1f3d67;
