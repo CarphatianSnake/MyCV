@@ -43,11 +43,11 @@ ul, li {
 }
 
 a {
-  color: #0699A6;
+  color: #305fa2;
 }
 
 a:hover, a:active {
-  color: #035F67;
+  color: #1f3d67;
 }
 
 img {
@@ -123,15 +123,15 @@ h5 {
 }
 
 svg {
-  fill: #0699A6;
-  -webkit-fill: #0699A6;
+  fill: #305fa2;
+  -webkit-fill: #305fa2;
   filter: drop-shadow(0px 2px 1.5px rgba(0, 0, 0, 0.25));
   -webkit-filter: drop-shadow(0px 2px 1.5px rgba(0, 0, 0, 0.25));
 }
 
 .social-media-list li svg:hover {
-  fill: #035F67;
-  -webkit-fill: #035F67;
+  fill: #1f3d67;
+  -webkit-fill: #1f3d67;
 }
 
 .container {
@@ -156,12 +156,12 @@ svg {
 .contact-me-btn {
   margin: 2.22rem auto 0 auto;
   width: 12.5rem;
-  background: #0699A6;
+  background: #305fa2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .contact-me-btn:hover, .contact-me-btn:active {
-  background: #035F67;
+  background: #1f3d67;
 }
 
 .contact-me-btn a {
@@ -178,7 +178,7 @@ svg {
 .separator {
   margin: 0 1.111rem;
   max-width: 3rem;
-  border-bottom: 10px solid #0699A6;
+  border-bottom: 10px solid #305fa2;
 }
 
 .social-media-list{
@@ -197,7 +197,7 @@ svg {
 }
 
 .location-link {
-  color: #0699A6;
+  color: #305fa2;
   text-decoration: none;
 }
 
@@ -206,7 +206,7 @@ svg {
 }
 
 .location-link:hover {
-  color: #035F67;
+  color: #1f3d67;
 }
 
 .responsibilities-list li {
