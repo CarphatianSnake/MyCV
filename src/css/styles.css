@@ -370,6 +370,10 @@ p {
 }
 
 @media print {
+  @page {
+    size: A4;
+    margin-bottom: 0;
+  }
   body {
     font-size: 16px;
   }
