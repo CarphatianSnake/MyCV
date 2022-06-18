@@ -224,145 +224,191 @@ p {
 }
 
 
-@media (min-width: 479px) {
-  html {
-    font-size: 20px;
-  }
-  .photo {
-    max-width: 11.111rem;
-    max-height: 11.111rem;
-  }
-  header {
-    clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 11.5%), 0% 100%);
+@media not print {
+  @media (min-width: 479px) {
+    html {
+      font-size: 20px;
+    }
+    .photo {
+      max-width: 11.111rem;
+      max-height: 11.111rem;
+    }
+    header {
+      clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 11.5%), 0% 100%);
+    }
+    
+    footer {
+      clip-path: polygon(0% calc(0% + 11.5%), 100% 0%, 100% 100%, 0% 100%);
+    }
   }
   
-  footer {
-    clip-path: polygon(0% calc(0% + 11.5%), 100% 0%, 100% 100%, 0% 100%);
+  @media (min-width: 989px) {
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 3.333rem 4.5rem 5.556rem 4.5rem;
+    }
+  
+    .photo-container {
+      max-width: 40%;
+    }
+  
+    .photo {
+      margin: auto;
+      max-width: 12.185rem;
+      max-height: 12.185rem;
+    }
+  
+    .header-content {
+      width: 60%;
+    }
+  
+    h1, .position-name {
+      text-align: left;
+    }
+  
+    .contact-me-btn {
+      margin: 2.22rem 0 0 0;
+    }
+  
+    .content {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      padding: 0 5rem;
+    }
+  
+    main {
+      max-width: 60%;
+    }
+  
+    aside {
+      max-width: 40%;
+    }
+  
+    section {
+      margin: 2.222rem 0;
+    }
+  
+    header {
+      clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 18%), 0% 100%);
+    }
+    
+    footer {
+      clip-path: polygon(0% calc(0% + 18%), 100% 0%, 100% 100%, 0% 100%);
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    .separator:last-child {
+      display: none;
+    }
+  
+    .separator {
+      margin: 0;
+    }
+  
+  }
+  
+  @media (min-width: 1439px) {
+    .photo {
+      max-width: 16.993rem;
+      max-height: 16.993rem;
+    }
+  
+    header {
+      padding: 3.333rem 8.25rem 5.556rem 8.25rem;
+    }
+  
+    h1 {
+      font-size: 5rem;
+    }
+  
+    .content {
+      padding: 0 8.25rem;
+    }
+  }
+  
+  @media (min-width: 1919px) {
+    html {
+      font-size: 26px;
+    }
+  }
+  
+  @media (min-width: 2239px) {
+    html {
+      font-size: 31px;
+    }
+  }
+  
+  @media (min-width: 2559px) {
+    html {
+      font-size: 35px;
+    }
+  }
+  
+  @media (min-width: 2879px) {
+    html {
+      font-size: 40px;
+    }
+  }
+  
+  @media (min-width: 3455px) {
+    html {
+      font-size: 48px;
+    }
+  }
+  
+  @media (min-width: 3839px) {
+    html {
+      font-size: 53px;
+    }
   }
 }
 
-@media (min-width: 989px) {
+@media print {
+  body {
+    font-size: 16px;
+  }
   header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3.333rem 4.5rem 5.556rem 4.5rem;
+    background: none;
   }
-
-  .photo-container {
-    max-width: 40%;
-  }
-
-  .photo {
-    margin: auto;
-    max-width: 12.185rem;
-    max-height: 12.185rem;
-  }
-
-  .header-content {
-    width: 60%;
-  }
-
-  h1, .position-name {
-    text-align: left;
-  }
-
-  .contact-me-btn {
-    margin: 2.22rem 0 0 0;
-  }
-
-  .content {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    padding: 0 5rem;
-  }
-
-  main {
-    max-width: 60%;
-  }
-
-  aside {
-    max-width: 40%;
-  }
-
-  section {
-    margin: 2.222rem 0;
-  }
-
-  header {
-    clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 18%), 0% 100%);
-  }
-  
   footer {
-    clip-path: polygon(0% calc(0% + 18%), 100% 0%, 100% 100%, 0% 100%);
-  }
-
-  h2 {
-    font-size: 1.8rem;
-  }
-
-  .separator:last-child {
     display: none;
   }
-
-  .separator {
-    margin: 0;
-  }
-
-}
-
-@media (min-width: 1439px) {
-  .photo {
-    max-width: 16.993rem;
-    max-height: 16.993rem;
-  }
-
-  header {
-    padding: 3.333rem 8.25rem 5.556rem 8.25rem;
-  }
-
   h1 {
-    font-size: 5rem;
+    font-size: 3rem;
   }
-
-  .content {
-    padding: 0 8.25rem;
+  h5 {
+    color: #000000;
   }
-}
-
-@media (min-width: 1919px) {
-  html {
-    font-size: 26px;
+  main section:first-child {
+    page-break-after: always;
   }
-}
-
-@media (min-width: 2239px) {
-  html {
-    font-size: 31px;
+  aside {
+    page-break-before: always;
   }
-}
-
-@media (min-width: 2559px) {
-  html {
-    font-size: 35px;
+  aside ul {
+    columns: 2;
+    -webkit-columns: 2;
   }
-}
-
-@media (min-width: 2879px) {
-  html {
-    font-size: 40px;
+  #telegram {
+    display: none;
   }
-}
-
-@media (min-width: 3455px) {
-  html {
-    font-size: 48px;
+  .photo {
+    max-width: 17rem;
+    max-height: 17rem;
   }
-}
-
-@media (min-width: 3839px) {
-  html {
-    font-size: 53px;
+  .contact-me-btn {
+    display: none;
+  }
+  .experience-list-item, aside section {
+    page-break-inside: avoid;
+  }
+  .separator {
+    display: none;
   }
 }
