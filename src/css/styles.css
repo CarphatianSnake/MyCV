@@ -372,6 +372,7 @@ p {
 @media print {
   @page {
     size: A4;
+    -webkit-size: A4;
     margin-bottom: 0;
   }
   body {
@@ -403,8 +404,8 @@ p {
     display: none;
   }
   .photo {
-    max-width: 17rem;
-    max-height: 17rem;
+    max-width: 14rem;
+    max-height: 14rem;
   }
   .contact-me-btn {
     display: none;
